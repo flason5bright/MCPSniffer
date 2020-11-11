@@ -1,0 +1,113 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "MCPSniffer.Interface/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "MCPSniffer.Model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MCPSniffer.Interface.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MCPSniffer.Interface.dll": {}
+        }
+      },
+      "MCPSniffer.Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/MCPSniffer.Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MCPSniffer.Model.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MCPSniffer.Interface/1.0.0": {
+      "type": "project",
+      "path": "../MCPSniffer.Interface/MCPSniffer.Interface.csproj",
+      "msbuildProject": "../MCPSniffer.Interface/MCPSniffer.Interface.csproj"
+    },
+    "MCPSniffer.Model/1.0.0": {
+      "type": "project",
+      "path": "../MCPSniffer.Model/MCPSniffer.Model.csproj",
+      "msbuildProject": "../MCPSniffer.Model/MCPSniffer.Model.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "MCPSniffer.Interface >= 1.0.0",
+      "MCPSniffer.Model >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\fengyong\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Projects\\MCPSniffer\\MCPSniffer\\MCPSniffer\\MCPSniffer.csproj",
+      "projectName": "MCPSniffer",
+      "projectPath": "C:\\Projects\\MCPSniffer\\MCPSniffer\\MCPSniffer\\MCPSniffer.csproj",
+      "packagesPath": "C:\\Users\\fengyong\\.nuget\\packages\\",
+      "outputPath": "C:\\Projects\\MCPSniffer\\MCPSniffer\\MCPSniffer\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\fengyong\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "projectReferences": {
+            "C:\\Projects\\MCPSniffer\\MCPSniffer\\MCPSniffer.Interface\\MCPSniffer.Interface.csproj": {
+              "projectPath": "C:\\Projects\\MCPSniffer\\MCPSniffer\\MCPSniffer.Interface\\MCPSniffer.Interface.csproj"
+            },
+            "C:\\Projects\\MCPSniffer\\MCPSniffer\\MCPSniffer.Model\\MCPSniffer.Model.csproj": {
+              "projectPath": "C:\\Projects\\MCPSniffer\\MCPSniffer\\MCPSniffer.Model\\MCPSniffer.Model.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
