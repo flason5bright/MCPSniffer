@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using MCPSniffer.Core;
 using MCPSniffer.Interface;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -25,7 +26,7 @@ namespace MCPSniffer
 		public void ConfigureServices(IServiceCollection services)
 		{
 			services.AddControllersWithViews();
-			services.AddSingleton<ISniffer>()
+			services.AddSingleton<ISniffer>(new ElasticSeachSniffer());
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

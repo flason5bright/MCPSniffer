@@ -1,0 +1,9 @@
+C:\Projects\MCPSniffer\MCPSniffer\MCPSniffer.Model\bin\Debug\netcoreapp3.1\MCPSniffer.Model.deps.json
+C:\Projects\MCPSniffer\MCPSniffer\MCPSniffer.Model\bin\Debug\netcoreapp3.1\MCPSniffer.Model.dll
+C:\Projects\MCPSniffer\MCPSniffer\MCPSniffer.Model\bin\Debug\netcoreapp3.1\MCPSniffer.Model.pdb
+C:\Projects\MCPSniffer\MCPSniffer\MCPSniffer.Model\obj\Debug\netcoreapp3.1\MCPSniffer.Model.csprojAssemblyReference.cache
+C:\Projects\MCPSniffer\MCPSniffer\MCPSniffer.Model\obj\Debug\netcoreapp3.1\MCPSniffer.Model.AssemblyInfoInputs.cache
+C:\Projects\MCPSniffer\MCPSniffer\MCPSniffer.Model\obj\Debug\netcoreapp3.1\MCPSniffer.Model.AssemblyInfo.cs
+C:\Projects\MCPSniffer\MCPSniffer\MCPSniffer.Model\obj\Debug\netcoreapp3.1\MCPSniffer.Model.csproj.CoreCompileInputs.cache
+C:\Projects\MCPSniffer\MCPSniffer\MCPSniffer.Model\obj\Debug\netcoreapp3.1\MCPSniffer.Model.dll
+C:\Projects\MCPSniffer\MCPSniffer\MCPSniffer.Model\obj\Debug\netcoreapp3.1\MCPSniffer.Model.pdb

@@ -1,8 +1,90 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewBag.Title = "Home";
+    Layout = null;
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CMYK Searcher</title>
+
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="~/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="~/demo.css" />
+    <link rel="stylesheet" type="text/css" href="~/component.css" />
+    <link rel="stylesheet" type="text/css" href="~/Home.css" />
+
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+
+
+</head>
+<body>
+    <div class="demo-1">
+        <div class="content">
+            <div id="large-header">
+                <canvas id="demo-canvas"></canvas>
+                <div class="search_div">
+                    <form action="/Home/Result?" method="post">
+                        <img src="~/images/ElektaLogo.svg" class="img" />
+                        <input id="txtCondition" class="search_box" maxlength="100" placeholder="Please enter a word." autocomplete="on" />
+                        <button id="btnSeach" type="submit" class="btn btn-info btn_search">
+                            <span class="glyphicon glyphicon-search"></span>  Search
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </div><!-- /container -->
+
+    <p id="cp">©2017&nbsp;Elekta&nbsp; Developed by NewBee Team</p>
+    <script src="~/Scripts/TweenLite.min.js"></script>
+    <script src="~/Scripts/EasePack.min.js"></script>
+    <script src="~/Scripts/rAF.js"></script>
+    <script src="~/Scripts/demo-1.js"></script>
+    <script src="~/Scripts/jquery-2.0.2.min.js"></script>
+    <script>
+        $(function () {
+            //js跳转页面(/controller/action)
+            $('#btnSeach').click(function () {
+                var f = document.getElementsByTagName("form")[0];
+                var condition = document.getElementById("txtCondition").value;
+                f.action = f.action + "condition=" + condition;
+
+                //var condition = document.getElementById("txtCondition").value;
+                //alert(condition);
+                //if (condition == undefined || condition == '') {
+                //    alert("Please input a word!");
+                //    return;
+                //}
+
+                //window.navigate('/Home/Result?condition=' + condition);
+                ////window.location.href = '/Home/Result?condition=' + condition;
+                //alert(window.location.href);
+            });
+        });
+
+        document.onkeydown = function (event) {
+            var e = event || window.event || arguments.callee.caller.arguments[0];
+
+            if (e && e.keyCode == 13) { // enter 键
+                var condition = document.getElementById("txtCondition").value;
+
+                if (condition == undefined || condition == '') {
+                    alert("Please input a word!");
+                    return;
+                }
+
+                window.location.href = '/Home/Result?condition=' + condition;
+            }
+        };
+    </script>
+
+
+</body>
+</html>

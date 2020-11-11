@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
+      "MCPSniffer.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "MCPSniffer.Interface": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MCPSniffer.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MCPSniffer.Core.dll": {}
+        }
+      },
       "MCPSniffer.Interface/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -28,6 +41,11 @@
     }
   },
   "libraries": {
+    "MCPSniffer.Core/1.0.0": {
+      "type": "project",
+      "path": "../MCPSniffer.Core/MCPSniffer.Core.csproj",
+      "msbuildProject": "../MCPSniffer.Core/MCPSniffer.Core.csproj"
+    },
     "MCPSniffer.Interface/1.0.0": {
       "type": "project",
       "path": "../MCPSniffer.Interface/MCPSniffer.Interface.csproj",
@@ -41,6 +59,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "MCPSniffer.Core >= 1.0.0",
       "MCPSniffer.Interface >= 1.0.0",
       "MCPSniffer.Model >= 1.0.0"
     ]
@@ -71,6 +90,9 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
+            "C:\\Projects\\MCPSniffer\\MCPSniffer\\MCPSniffer.Core\\MCPSniffer.Core.csproj": {
+              "projectPath": "C:\\Projects\\MCPSniffer\\MCPSniffer\\MCPSniffer.Core\\MCPSniffer.Core.csproj"
+            },
             "C:\\Projects\\MCPSniffer\\MCPSniffer\\MCPSniffer.Interface\\MCPSniffer.Interface.csproj": {
               "projectPath": "C:\\Projects\\MCPSniffer\\MCPSniffer\\MCPSniffer.Interface\\MCPSniffer.Interface.csproj"
             },

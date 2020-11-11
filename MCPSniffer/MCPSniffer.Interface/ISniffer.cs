@@ -7,6 +7,7 @@ namespace MCPSniffer.Interface
 {
 	public interface ISniffer
 	{
-		public IEnumerable<MCPFileInfo> GetMCPFileInfosByCondition(string condition);
+		IEnumerable<MCPFileInfo> GetMCPFileInfosByCondition(string condition);
+		MCPFileInfo GetResultByIdAndCondition(string condition, int id);
 	}
 }

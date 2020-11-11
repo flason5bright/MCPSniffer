@@ -1,0 +1,41 @@
+﻿body {
+    background-image: url('images/demo-1-bg.jpg');
+    background-position: center top;
+    background-size: 80%;
+    text-align: center;
+    font-family: arial;
+    filter : progid:DXImageTransform.Microsoft.AlphaImageLoader ( src='/images/demo-2-bg.jpg',sizingMethod='scale' )
+}
+
+
+.search_box {
+    width: 500px;
+    height: 36px;
+    font: 16px/18px arial;
+    padding-left: 5px;
+    filter: alpha(opacity=90);
+    -moz-opacity: 0.9;
+    -khtml-opacity: 0.9;
+    opacity: 0.9;
+}
+
+.search_div {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    width: 600px;
+    height: 100px;
+    margin-left: -300px;
+    margin-top: -50px;
+}
+
+.btn_search {
+    height: 37px;
+    margin-top: -2px;
+}
+
+.img {
+    margin: 15px auto;
+    display: block;
+    width:350px;
+}

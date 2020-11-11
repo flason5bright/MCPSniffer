@@ -1,7 +1,13 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MCPSniffer.Core\MCPSniffer.Core.csproj" />
+    <ProjectReference Include="..\MCPSniffer.Interface\MCPSniffer.Interface.csproj" />
+    <ProjectReference Include="..\MCPSniffer.Model\MCPSniffer.Model.csproj" />
+  </ItemGroup>
 
 </Project>

@@ -1,0 +1,12 @@
+C:\Projects\MCPSniffer\MCPSniffer\MCPSniffer.Interface\bin\Debug\netcoreapp3.1\MCPSniffer.Interface.deps.json
+C:\Projects\MCPSniffer\MCPSniffer\MCPSniffer.Interface\bin\Debug\netcoreapp3.1\MCPSniffer.Interface.dll
+C:\Projects\MCPSniffer\MCPSniffer\MCPSniffer.Interface\bin\Debug\netcoreapp3.1\MCPSniffer.Interface.pdb
+C:\Projects\MCPSniffer\MCPSniffer\MCPSniffer.Interface\bin\Debug\netcoreapp3.1\MCPSniffer.Model.dll
+C:\Projects\MCPSniffer\MCPSniffer\MCPSniffer.Interface\bin\Debug\netcoreapp3.1\MCPSniffer.Model.pdb
+C:\Projects\MCPSniffer\MCPSniffer\MCPSniffer.Interface\obj\Debug\netcoreapp3.1\MCPSniffer.Interface.csprojAssemblyReference.cache
+C:\Projects\MCPSniffer\MCPSniffer\MCPSniffer.Interface\obj\Debug\netcoreapp3.1\MCPSniffer.Interface.AssemblyInfoInputs.cache
+C:\Projects\MCPSniffer\MCPSniffer\MCPSniffer.Interface\obj\Debug\netcoreapp3.1\MCPSniffer.Interface.AssemblyInfo.cs
+C:\Projects\MCPSniffer\MCPSniffer\MCPSniffer.Interface\obj\Debug\netcoreapp3.1\MCPSniffer.Interface.csproj.CoreCompileInputs.cache
+C:\Projects\MCPSniffer\MCPSniffer\MCPSniffer.Interface\obj\Debug\netcoreapp3.1\MCPSniffer.Interface.csproj.CopyComplete
+C:\Projects\MCPSniffer\MCPSniffer\MCPSniffer.Interface\obj\Debug\netcoreapp3.1\MCPSniffer.Interface.dll
+C:\Projects\MCPSniffer\MCPSniffer\MCPSniffer.Interface\obj\Debug\netcoreapp3.1\MCPSniffer.Interface.pdb

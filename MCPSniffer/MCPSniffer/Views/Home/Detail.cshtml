@@ -1,0 +1,84 @@
+﻿@{
+    ViewBag.Title = "Detail";
+    Layout = "_ResultLayout";
+    var result = (MCPSniffer.Model.MCPFileInfo)ViewData["Result"];
+    string condition = ViewData["condition"].ToString();
+
+}
+
+<section id="resultSec" class="result">
+    <ul id="resultUl">
+
+        @{
+            @functions{
+                string GetKeyWordString(string oldValue, string keyword)
+                {
+                    var lowerValue = oldValue.ToLower();
+                    var lowerKeyWords = keyword.ToLower();
+                    var length = lowerKeyWords.Length;
+
+                    int index = 0;
+
+                    List<string> keywords = new List<string>();
+
+                    while (lowerValue.IndexOf(lowerKeyWords, index) > -1)
+                    {
+                        index = lowerValue.IndexOf(lowerKeyWords, index);
+
+                        var key = oldValue.Substring(index, length);
+
+                        keywords.Add(key);
+
+                        index = index + length;
+
+                    }
+
+
+                    string newValue = oldValue;
+                    int count = 0;
+                    keywords = keywords.Distinct().ToList();
+                    var newList = new List<string>();
+                    foreach (var item in keywords)
+                    {
+                        var formatStr = string.Format("{{0}}", count);
+                        newValue = newValue.Replace(item, formatStr);
+                        count++;
+                        var newKeyWord = string.Format("<em>{0}</em>", item);
+                        newList.Add(newKeyWord);
+                    }
+
+                    newValue = string.Format(newValue, newList.ToArray());
+
+                    return newValue;
+
+                }
+            }
+
+            if (result !=null)
+            {
+                    <li>
+                        <div>
+                            <h3><a href="">@(Html.Raw(GetKeyWordString(result.Name, condition)))</a></h3>
+                            <p>
+                                Last Modify:@result.LastModifyTime <br />
+
+                                @(Html.Raw(GetKeyWordString(result.Content, condition)))
+                            </p>
+                        </div>
+                    </li>
+                
+            }
+            else
+            {
+                <li>
+                    <div>
+
+                        <img src="~/images/nodata.png" />
+
+                    </div>
+                </li>
+            }
+        }
+    </ul>
+</section>
+
