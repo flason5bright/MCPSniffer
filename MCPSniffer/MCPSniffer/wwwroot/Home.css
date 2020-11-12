@@ -22,7 +22,7 @@
 .search_div {
     position: absolute;
     left: 50%;
-    top: 40%;
+    top: 10%;
     width: 600px;
     height: 100px;
     margin-left: -300px;
@@ -35,7 +35,7 @@
 }
 
 .img {
-    margin: 15px auto;
+    margin: 100px auto;
     display: block;
-    width:350px;
+    width:600px;
 }
