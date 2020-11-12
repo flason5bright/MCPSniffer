@@ -9,6 +9,8 @@ namespace MCPSniffer.Model
 		public DateTime LastModifyTime { get; set; }
 		public string Size { get; set; }
 
+		public string Directory { get; set; }
+
 		public string Content { get; set; }
 	}
 }

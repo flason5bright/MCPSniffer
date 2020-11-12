@@ -1,0 +1,11 @@
+C:\Projects\MCPSniffer\MCPSniffer\ElasticSeachSDK\bin\Debug\netcoreapp3.1\ElasticSeachSDK.deps.json
+C:\Projects\MCPSniffer\MCPSniffer\ElasticSeachSDK\bin\Debug\netcoreapp3.1\ElasticSeachSDK.dll
+C:\Projects\MCPSniffer\MCPSniffer\ElasticSeachSDK\bin\Debug\netcoreapp3.1\ElasticSeachSDK.pdb
+C:\Projects\MCPSniffer\MCPSniffer\ElasticSeachSDK\bin\Debug\netcoreapp3.1\MCPSniffer.Model.dll
+C:\Projects\MCPSniffer\MCPSniffer\ElasticSeachSDK\bin\Debug\netcoreapp3.1\MCPSniffer.Model.pdb
+C:\Projects\MCPSniffer\MCPSniffer\ElasticSeachSDK\obj\Debug\netcoreapp3.1\ElasticSeachSDK.csprojAssemblyReference.cache
+C:\Projects\MCPSniffer\MCPSniffer\ElasticSeachSDK\obj\Debug\netcoreapp3.1\ElasticSeachSDK.AssemblyInfoInputs.cache
+C:\Projects\MCPSniffer\MCPSniffer\ElasticSeachSDK\obj\Debug\netcoreapp3.1\ElasticSeachSDK.AssemblyInfo.cs
+C:\Projects\MCPSniffer\MCPSniffer\ElasticSeachSDK\obj\Debug\netcoreapp3.1\ElasticSeachSDK.csproj.CopyComplete
+C:\Projects\MCPSniffer\MCPSniffer\ElasticSeachSDK\obj\Debug\netcoreapp3.1\ElasticSeachSDK.dll
+C:\Projects\MCPSniffer\MCPSniffer\ElasticSeachSDK\obj\Debug\netcoreapp3.1\ElasticSeachSDK.pdb

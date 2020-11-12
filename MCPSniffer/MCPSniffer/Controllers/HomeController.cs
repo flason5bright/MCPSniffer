@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using MCPSniffer.Models;
 using MCPSniffer.Interface;
+using ElasticSeachSDK;
 
 namespace MCPSniffer.Controllers
 {

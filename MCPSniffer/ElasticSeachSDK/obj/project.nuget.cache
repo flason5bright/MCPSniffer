@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PEFogu/qCUBDCkpbpb3riBQxvPeOVtQe81Q2zuGZZKW308x/uOdDRkg1qAkYud9RjFinfGfYDv8TVdV6sU9aMA==",
+  "dgSpecHash": "twXlVPqxNfJTjgeltD8OfjerYBGwQ5lmQjv1Zaihy7/KWNhbO2/8IkZYrRCjCCH07ff3XKSzXFT1xjHUYYBenQ==",
   "success": true,
-  "projectFilePath": "C:\\Projects\\MCPSniffer\\MCPSniffer\\MCPSniffer.Core\\MCPSniffer.Core.csproj",
+  "projectFilePath": "C:\\Projects\\MCPSniffer\\MCPSniffer\\ElasticSeachSDK\\ElasticSeachSDK.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\fengyong\\.nuget\\packages\\elasticsearch.net\\7.9.0\\elasticsearch.net.7.9.0.nupkg.sha512",
     "C:\\Users\\fengyong\\.nuget\\packages\\microsoft.csharp\\4.6.0\\microsoft.csharp.4.6.0.nupkg.sha512",

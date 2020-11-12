@@ -64,49 +64,6 @@
           "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.dll": {}
         }
       },
-      "ElasticSeachSDK/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "dependencies": {
-          "Elasticsearch.Net": "7.9.0",
-          "MCPSniffer.Model": "1.0.0",
-          "NEST": "7.9.0",
-          "Newtonsoft.Json": "12.0.3"
-        },
-        "compile": {
-          "bin/placeholder/ElasticSeachSDK.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ElasticSeachSDK.dll": {}
-        }
-      },
-      "MCPSniffer.Core/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "dependencies": {
-          "ElasticSeachSDK": "1.0.0",
-          "MCPSniffer.Interface": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/MCPSniffer.Core.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/MCPSniffer.Core.dll": {}
-        }
-      },
-      "MCPSniffer.Interface/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "dependencies": {
-          "MCPSniffer.Model": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/MCPSniffer.Interface.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/MCPSniffer.Interface.dll": {}
-        }
-      },
       "MCPSniffer.Model/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -315,21 +272,6 @@
         "version.txt"
       ]
     },
-    "ElasticSeachSDK/1.0.0": {
-      "type": "project",
-      "path": "../ElasticSeachSDK/ElasticSeachSDK.csproj",
-      "msbuildProject": "../ElasticSeachSDK/ElasticSeachSDK.csproj"
-    },
-    "MCPSniffer.Core/1.0.0": {
-      "type": "project",
-      "path": "../MCPSniffer.Core/MCPSniffer.Core.csproj",
-      "msbuildProject": "../MCPSniffer.Core/MCPSniffer.Core.csproj"
-    },
-    "MCPSniffer.Interface/1.0.0": {
-      "type": "project",
-      "path": "../MCPSniffer.Interface/MCPSniffer.Interface.csproj",
-      "msbuildProject": "../MCPSniffer.Interface/MCPSniffer.Interface.csproj"
-    },
     "MCPSniffer.Model/1.0.0": {
       "type": "project",
       "path": "../MCPSniffer.Model/MCPSniffer.Model.csproj",
@@ -338,10 +280,10 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "ElasticSeachSDK >= 1.0.0",
-      "MCPSniffer.Core >= 1.0.0",
-      "MCPSniffer.Interface >= 1.0.0",
-      "MCPSniffer.Model >= 1.0.0"
+      "Elasticsearch.Net >= 7.9.0",
+      "MCPSniffer.Model >= 1.0.0",
+      "NEST >= 7.9.0",
+      "Newtonsoft.Json >= 12.0.3"
     ]
   },
   "packageFolders": {
@@ -350,11 +292,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\MCPSniffer\\MCPSniffer\\MCPSniffer\\MCPSniffer.csproj",
-      "projectName": "MCPSniffer",
-      "projectPath": "C:\\Projects\\MCPSniffer\\MCPSniffer\\MCPSniffer\\MCPSniffer.csproj",
+      "projectUniqueName": "C:\\Projects\\MCPSniffer\\MCPSniffer\\ElasticSeachSDK\\ElasticSeachSDK.csproj",
+      "projectName": "ElasticSeachSDK",
+      "projectPath": "C:\\Projects\\MCPSniffer\\MCPSniffer\\ElasticSeachSDK\\ElasticSeachSDK.csproj",
       "packagesPath": "C:\\Users\\fengyong\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\MCPSniffer\\MCPSniffer\\MCPSniffer\\obj\\",
+      "outputPath": "C:\\Projects\\MCPSniffer\\MCPSniffer\\ElasticSeachSDK\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\fengyong\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -370,15 +312,6 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Projects\\MCPSniffer\\MCPSniffer\\ElasticSeachSDK\\ElasticSeachSDK.csproj": {
-              "projectPath": "C:\\Projects\\MCPSniffer\\MCPSniffer\\ElasticSeachSDK\\ElasticSeachSDK.csproj"
-            },
-            "C:\\Projects\\MCPSniffer\\MCPSniffer\\MCPSniffer.Core\\MCPSniffer.Core.csproj": {
-              "projectPath": "C:\\Projects\\MCPSniffer\\MCPSniffer\\MCPSniffer.Core\\MCPSniffer.Core.csproj"
-            },
-            "C:\\Projects\\MCPSniffer\\MCPSniffer\\MCPSniffer.Interface\\MCPSniffer.Interface.csproj": {
-              "projectPath": "C:\\Projects\\MCPSniffer\\MCPSniffer\\MCPSniffer.Interface\\MCPSniffer.Interface.csproj"
-            },
             "C:\\Projects\\MCPSniffer\\MCPSniffer\\MCPSniffer.Model\\MCPSniffer.Model.csproj": {
               "projectPath": "C:\\Projects\\MCPSniffer\\MCPSniffer\\MCPSniffer.Model\\MCPSniffer.Model.csproj"
             }
@@ -393,6 +326,20 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "dependencies": {
+          "Elasticsearch.Net": {
+            "target": "Package",
+            "version": "[7.9.0, )"
+          },
+          "NEST": {
+            "target": "Package",
+            "version": "[7.9.0, )"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[12.0.3, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
@@ -404,9 +351,6 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
-          "Microsoft.AspNetCore.App": {
-            "privateAssets": "none"
-          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }

@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "W5gh2/UJTKOBJ8g6wf4t8xor7ruFpGcDtslfirk1GL7fYdfDdrqBySyAueh5Czk9jX+E+y25N5VonWz6rLFX4w==",
+  "dgSpecHash": "8qJ856yWq1+88WZFxc3x+6lifF/QIi1pkcye0PKQDEOWLM66XCvBseh1nhgIUDnKAmrUA1QDVIDifb1lBF26vQ==",
   "success": true,
   "projectFilePath": "C:\\Projects\\MCPSniffer\\MCPSniffer\\MCPSniffer\\MCPSniffer.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\fengyong\\.nuget\\packages\\elasticsearch.net\\7.9.0\\elasticsearch.net.7.9.0.nupkg.sha512",
+    "C:\\Users\\fengyong\\.nuget\\packages\\microsoft.csharp\\4.6.0\\microsoft.csharp.4.6.0.nupkg.sha512",
+    "C:\\Users\\fengyong\\.nuget\\packages\\nest\\7.9.0\\nest.7.9.0.nupkg.sha512",
+    "C:\\Users\\fengyong\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\fengyong\\.nuget\\packages\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
+    "C:\\Users\\fengyong\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.5.1\\system.diagnostics.diagnosticsource.4.5.1.nupkg.sha512"
+  ],
   "logs": []
 }

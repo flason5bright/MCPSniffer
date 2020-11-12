@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCPSniffer", "MCPSniffer\MCPSniffer.csproj", "{702B156A-C2F2-4804-B8C3-38E5530D73C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MCPSniffer", "MCPSniffer\MCPSniffer.csproj", "{702B156A-C2F2-4804-B8C3-38E5530D73C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCPSniffer.Model", "MCPSniffer.Model\MCPSniffer.Model.csproj", "{8A866FEC-F0EC-4825-BBA9-2DE9A86152BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MCPSniffer.Model", "MCPSniffer.Model\MCPSniffer.Model.csproj", "{8A866FEC-F0EC-4825-BBA9-2DE9A86152BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCPSniffer.Interface", "MCPSniffer.Interface\MCPSniffer.Interface.csproj", "{8218EAD8-3BC6-4ECF-B7A0-CB57ECF4DE22}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MCPSniffer.Interface", "MCPSniffer.Interface\MCPSniffer.Interface.csproj", "{8218EAD8-3BC6-4ECF-B7A0-CB57ECF4DE22}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCPSniffer.Core", "MCPSniffer.Core\MCPSniffer.Core.csproj", "{09325722-349B-480A-9572-02B4E24F4EA8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MCPSniffer.Core", "MCPSniffer.Core\MCPSniffer.Core.csproj", "{09325722-349B-480A-9572-02B4E24F4EA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElasticSeachSDK", "ElasticSeachSDK\ElasticSeachSDK.csproj", "{DCB9444F-680A-45B8-89EA-205F26438C65}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{09325722-349B-480A-9572-02B4E24F4EA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09325722-349B-480A-9572-02B4E24F4EA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09325722-349B-480A-9572-02B4E24F4EA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCB9444F-680A-45B8-89EA-205F26438C65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCB9444F-680A-45B8-89EA-205F26438C65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCB9444F-680A-45B8-89EA-205F26438C65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCB9444F-680A-45B8-89EA-205F26438C65}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
