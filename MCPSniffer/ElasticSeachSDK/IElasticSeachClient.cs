@@ -10,5 +10,8 @@ namespace ElasticSeachSDK
 		void SaveMCPFileInfo(MCPFileInfo fileInfo);
 
 		IEnumerable<MCPFileInfo> SearchMCPFileInfo(string condition);
+
+		void DeleteIndex(string indexName);
+		void CreateIndex(string indexName);
 	}
 }

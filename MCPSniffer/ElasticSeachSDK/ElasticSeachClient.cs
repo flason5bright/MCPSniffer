@@ -19,19 +19,27 @@ namespace ElasticSeachSDK
 			var settings = new ConnectionSettings(new Uri(ConnectionSting)).DefaultIndex(DefaultIndex);
 
 			_client = new ElasticClient(settings);
+		}
 
-			//		_client.Indices
-			//.Create(DefaultIndex, s => s
-			//	.Settings(se => se
-			//		.NumberOfReplicas(1)
-			//		.NumberOfShards(1)
-			//		.Setting("merge.policy.merge_factor", "10")));
+		public void CreateIndex(string indexName)
+		{
+			_client.Indices
+				.Create(indexName, s => s
+				.Settings(se => se
+				.NumberOfReplicas(1)
+				.NumberOfShards(1)
+				.Setting("merge.policy.merge_factor", "10")));
+		}
+
+		public void DeleteIndex(string indexName)
+		{
+			_client.Indices.Delete(indexName);
 		}
 
 		public void SaveMCPFileInfo(MCPFileInfo fileInfo)
 		{
 			var response = _client.IndexDocument(fileInfo);
-			Console.WriteLine(response.DebugInformation);
+			//Console.WriteLine(response.DebugInformation);
 		}
 
 		public void SaveMCPFileInfos(IEnumerable<MCPFileInfo> fileInfos)

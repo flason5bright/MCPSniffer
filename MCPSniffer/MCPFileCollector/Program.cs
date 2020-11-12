@@ -7,7 +7,7 @@ namespace MCPFileCollector
 	{
 		static void Main(string[] args)
 		{
-			GetMCPFiles fileCollector = new GetMCPFiles(@"Y:\");
+			GetMCPFiles fileCollector = new GetMCPFiles(@"M:\");
 
 			try
 			{
