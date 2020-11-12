@@ -28,8 +28,13 @@ namespace ElasticSeachSDK
 			//		.Setting("merge.policy.merge_factor", "10")));
 		}
 
+		public void SaveMCPFileInfo(MCPFileInfo fileInfo)
+		{
+			var response = _client.IndexDocument(fileInfo);
+			Console.WriteLine(response.DebugInformation);
+		}
 
-		public void SaveMCPFileInfo(IEnumerable<MCPFileInfo> fileInfos)
+		public void SaveMCPFileInfos(IEnumerable<MCPFileInfo> fileInfos)
 		{
 			foreach (var mcpFile in fileInfos)
 			{

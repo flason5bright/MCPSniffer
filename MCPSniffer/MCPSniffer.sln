@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ElasticSeachSDK", "ElasticS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElasticSearchClientDemo", "ElasticSearchClientDemo\ElasticSearchClientDemo.csproj", "{7712E1F7-EC83-4105-8F4D-922CB8BF82C7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCPFileCollector", "MCPFileCollector\MCPFileCollector.csproj", "{C53E1041-F9E8-4651-8FC4-214E5E581340}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{7712E1F7-EC83-4105-8F4D-922CB8BF82C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7712E1F7-EC83-4105-8F4D-922CB8BF82C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7712E1F7-EC83-4105-8F4D-922CB8BF82C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C53E1041-F9E8-4651-8FC4-214E5E581340}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C53E1041-F9E8-4651-8FC4-214E5E581340}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C53E1041-F9E8-4651-8FC4-214E5E581340}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C53E1041-F9E8-4651-8FC4-214E5E581340}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

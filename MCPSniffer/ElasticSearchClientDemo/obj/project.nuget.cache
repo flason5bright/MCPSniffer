@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "Pm55Ua5nZtlI4yX9tkwAA2PpaI8NS/xxzSECvP3huBih8MeqaIgezS9PsT5EYdvZfspCXCe9/4amrn0+ccTnaQ==",
+  "success": true,
+  "projectFilePath": "C:\\Michael\\Research\\Extension Kit For MCP\\Projects\\MCPSnifferNew\\MCPSniffer\\ElasticSearchClientDemo\\ElasticSearchClientDemo.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\TangYM\\.nuget\\packages\\elasticsearch.net\\7.9.0\\elasticsearch.net.7.9.0.nupkg.sha512",
+    "C:\\Users\\TangYM\\.nuget\\packages\\microsoft.csharp\\4.6.0\\microsoft.csharp.4.6.0.nupkg.sha512",
+    "C:\\Users\\TangYM\\.nuget\\packages\\nest\\7.9.0\\nest.7.9.0.nupkg.sha512",
+    "C:\\Users\\TangYM\\.nuget\\packages\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
+    "C:\\Users\\TangYM\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.5.1\\system.diagnostics.diagnosticsource.4.5.1.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -5,7 +5,9 @@ namespace ElasticSeachSDK
 {
 	public interface IElasticSeachClient
 	{
-		void SaveMCPFileInfo(IEnumerable<MCPFileInfo> fileInfos);
+		void SaveMCPFileInfos(IEnumerable<MCPFileInfo> fileInfos);
+
+		void SaveMCPFileInfo(MCPFileInfo fileInfo);
 
 		IEnumerable<MCPFileInfo> SearchMCPFileInfo(string condition);
 	}

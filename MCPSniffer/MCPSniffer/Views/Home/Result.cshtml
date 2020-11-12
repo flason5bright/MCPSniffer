@@ -10,49 +10,53 @@
 
         @{
             @functions{
-                string GetKeyWordString(string oldValue, string keyword)
-                {
+				string GetKeyWordString(string oldValue, string keyword)
+				{
 
-                    var lowerValue = oldValue.ToLower();
-                    var lowerKeyWords = keyword.ToLower();
-                    var length = lowerKeyWords.Length;
+					var lowerValue = oldValue.ToLower();
+					var lowerKeyWords = keyword.ToLower();
+					var length = lowerKeyWords.Length;
 
-                    int index = 0;
+					int index = 0;
 
-                    List<string> keywords = new List<string>();
+					List<string> keywords = new List<string>();
 
-                    while (lowerValue.IndexOf(lowerKeyWords, index) > -1)
-                    {
-                        index = lowerValue.IndexOf(lowerKeyWords, index);
+					while (lowerValue.IndexOf(lowerKeyWords, index) > -1)
+					{
+						index = lowerValue.IndexOf(lowerKeyWords, index);
 
-                        var key = oldValue.Substring(index, length);
+						var key = oldValue.Substring(index, length);
 
-                        keywords.Add(key);
+						keywords.Add(key);
 
-                        index = index + length;
+						index = index + length;
 
-                    }
+					}
 
 
-                    string newValue = oldValue;
-                    int count = 0;
-                    keywords = keywords.Distinct().ToList();
-                    var newList = new List<string>();
-                    foreach (var item in keywords)
-                    {
-                        var formatStr = string.Format("{{0}}", count);
-                        newValue = newValue.Replace(item, formatStr);
-                        count++;
-                        var newKeyWord = string.Format("<em>{0}</em>", item);
-                        newList.Add(newKeyWord);
-                    }
+					string newValue = oldValue;
+					int count = 0;
+					keywords = keywords.Distinct().ToList();
+					var newList = new List<string>();
+					foreach (var item in keywords)
+					{
+						var formatStr = string.Format("{{0}}", count);
+						newValue = newValue.Replace(item, formatStr);
+						count++;
+						var newKeyWord = string.Format("<em>{0}</em>", item);
+						newList.Add(newKeyWord);
+					}
 
-                    newValue = string.Format(newValue, newList.ToArray());
+					try
+					{
+						newValue = string.Format(newValue, newList.ToArray());
+					}
+					catch { }
 
-                    return newValue;
+					return newValue;
 
-                }
-            }
+				}
+			}
 
             @functions
             {
