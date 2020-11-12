@@ -71,6 +71,15 @@ namespace MCPFileCollector
 		}
 
 		private int Id = 1;
+		private IList<string> excludedExtensions = new List<string>()
+		{
+			".jar",
+			".exe",
+			".zip",
+			".msi",
+			".dll"
+		};
+
 		private void CheckAllInFolder(string folderPath)
 		{
 			DirectoryInfo theFolder = new DirectoryInfo(folderPath);
@@ -87,7 +96,7 @@ namespace MCPFileCollector
 				{
 					foreach (var nextFile in HasFiles)
 					{
-						Console.WriteLine($"Start Read File {nextFile}");
+						Console.WriteLine($"Start Read File Info {nextFile}");
 						MCPFileInfo theFileInfo = new MCPFileInfo()
 						{
 							Id = this.Id++,
@@ -98,14 +107,17 @@ namespace MCPFileCollector
 							Size = string.Concat(nextFile.Length.ToString(), " bytes"),
 						};
 
-						if (!nextFile.Extension.ToLower().Equals("jar"))
+						if (!excludedExtensions.Contains(nextFile.Extension.ToLower()))
 						{
 							theFileInfo.Content = nextFile.Length < 2000000 ? GetFileContent(nextFile) : "File is too large...";
+						}
+						else
+						{
+							theFileInfo.Content = string.Empty;
 						};
 
-						//Console.WriteLine($"Start Send File Info {nextFile}");
 						client.SaveMCPFileInfo(theFileInfo);
-						Console.WriteLine($"Send File Info {nextFile} to ES Successfully");
+						Console.WriteLine($"Send File Info {nextFile} to ElasticSearch Successfully");
 
 					}
 				}
