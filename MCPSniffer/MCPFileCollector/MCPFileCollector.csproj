@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ElasticSeachSDK\ElasticSeachSDK.csproj" />
+    <ProjectReference Include="..\MCPSniffer.Model\MCPSniffer.Model.csproj" />
+  </ItemGroup>
+
+</Project>
