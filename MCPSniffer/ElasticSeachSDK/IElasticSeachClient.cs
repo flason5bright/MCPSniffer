@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace ElasticSeachSDK
 {
-	public interface IElasticSeach
+	public interface IElasticSeachClient
 	{
 		void SaveMCPFileInfo(IEnumerable<MCPFileInfo> fileInfos);
 

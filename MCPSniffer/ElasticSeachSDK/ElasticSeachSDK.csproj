@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="NEST" Version="7.9.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\MCPSniffer.Model\MCPSniffer.Model.csproj" />
   </ItemGroup>
 

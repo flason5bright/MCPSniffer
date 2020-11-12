@@ -9,7 +9,7 @@ namespace ElasticSeachSDK
 	public class ElasticSeachClient : IElasticSeachClient
 	{
 
-		public const string ConnectionSting = "http://localhost:9200";
+		public const string ConnectionSting = "http://10.59.235.21:9200/";
 
 		public const string DefaultIndex = "MCPFiles";
 
