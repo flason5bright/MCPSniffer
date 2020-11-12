@@ -2,7 +2,6 @@
 using Nest;
 using System;
 using System.Collections.Generic;
-using System.Security.Cryptography.X509Certificates;
 
 namespace ElasticSeachSDK
 {
@@ -11,7 +10,7 @@ namespace ElasticSeachSDK
 
 		public const string ConnectionSting = "http://10.59.235.21:9200/";
 
-		public const string DefaultIndex = "MCPFiles";
+		public const string DefaultIndex = "mcpfiles";
 
 		private ElasticClient _client;
 
@@ -20,6 +19,13 @@ namespace ElasticSeachSDK
 			var settings = new ConnectionSettings(new Uri(ConnectionSting)).DefaultIndex(DefaultIndex);
 
 			_client = new ElasticClient(settings);
+
+			//		_client.Indices
+			//.Create(DefaultIndex, s => s
+			//	.Settings(se => se
+			//		.NumberOfReplicas(1)
+			//		.NumberOfShards(1)
+			//		.Setting("merge.policy.merge_factor", "10")));
 		}
 
 
@@ -27,7 +33,7 @@ namespace ElasticSeachSDK
 		{
 			foreach (var mcpFile in fileInfos)
 			{
-				_client.IndexDocument(mcpFile);
+				var response = _client.IndexDocument(mcpFile);
 			}
 		}
 

@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MCPSniffer.Interface", "MCP
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MCPSniffer.Core", "MCPSniffer.Core\MCPSniffer.Core.csproj", "{09325722-349B-480A-9572-02B4E24F4EA8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElasticSeachSDK", "ElasticSeachSDK\ElasticSeachSDK.csproj", "{DCB9444F-680A-45B8-89EA-205F26438C65}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ElasticSeachSDK", "ElasticSeachSDK\ElasticSeachSDK.csproj", "{DCB9444F-680A-45B8-89EA-205F26438C65}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElasticSearchClientDemo", "ElasticSearchClientDemo\ElasticSearchClientDemo.csproj", "{7712E1F7-EC83-4105-8F4D-922CB8BF82C7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{DCB9444F-680A-45B8-89EA-205F26438C65}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DCB9444F-680A-45B8-89EA-205F26438C65}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DCB9444F-680A-45B8-89EA-205F26438C65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7712E1F7-EC83-4105-8F4D-922CB8BF82C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7712E1F7-EC83-4105-8F4D-922CB8BF82C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7712E1F7-EC83-4105-8F4D-922CB8BF82C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7712E1F7-EC83-4105-8F4D-922CB8BF82C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
