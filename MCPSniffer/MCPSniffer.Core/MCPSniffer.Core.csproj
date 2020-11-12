@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ElasticSeachSDK\ElasticSeachSDK.csproj" />
     <ProjectReference Include="..\MCPSniffer.Interface\MCPSniffer.Interface.csproj" />
   </ItemGroup>
 
