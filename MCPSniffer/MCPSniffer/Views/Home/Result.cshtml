@@ -96,7 +96,7 @@
                     }
 
 
-                    var substring = originalStr.Substring(startIndex, maxLength);
+                    var substring = originalStr.Substring(startIndex, Math.Min(length - startIndex,maxLength));
 
                     var result = GetKeyWordString(substring, condition);
 

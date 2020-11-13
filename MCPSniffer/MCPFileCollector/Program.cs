@@ -11,10 +11,12 @@ namespace MCPFileCollector
 
 			try
 			{
-				Console.WriteLine("Start Read files");
+				Console.WriteLine("Start collect MCP files");
+
 				fileCollector.GetAllFromMCP();
 
-				var list = fileCollector.allFilesOnMCP;
+				Console.WriteLine("Collect all MCP files complete");
+
 			}catch(Exception ex)
 			{
 				Console.WriteLine(ex.Message);
